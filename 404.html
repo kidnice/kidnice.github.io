@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  var path = window.location.pathname;
+  var pathParts = path.split('/');
+  var newUrl = '/';
+  
+  if (pathParts.length > 2) {
+    newUrl += pathParts[1] + '/index.html';
+  } else {
+    newUrl += 'index.html';
+  }
+  window.location.href = newUrl + '#' + window.location.pathname;
+</script>
